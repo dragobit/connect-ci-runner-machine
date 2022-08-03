@@ -12,6 +12,6 @@ jobs:
     - name: Setting the environment up.
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-        VNC_USER_PASSWORD: ${{ secrets.VNC_USER_PASSWORD }}
+        VNC_USER_PASSWORD: user
       run: source ./scripts/mac_configure.sh "$VNC_USER_PASSWORD" "$NGROK_AUTH_TOKEN"
     - run: sleep 600
