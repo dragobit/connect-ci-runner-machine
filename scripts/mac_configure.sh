@@ -24,10 +24,10 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 #install ngrok
 brew install ngrok
 
-git clone https://github.com/novnc/noVNC.git
+#git clone https://github.com/novnc/noVNC.git
 
-noVNC/utils/novnc_proxy --vnc localhost:5900 --listen localhost:6081
+#noVNC/utils/novnc_proxy --vnc localhost:5900 --listen localhost:6081
 #configure ngrok and start it
 ngrok authtoken $2
-#ngrok tcp 5900 &
-ngrok http 6081
+ngrok tcp 5900 &
+#ngrok http 6081
